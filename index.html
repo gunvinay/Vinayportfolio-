@@ -3,104 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vinay Babu Gundela - ServiceNow Developer</title>
+  <title>Vinay Babu Gundela - ServiceNow Developer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"  crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="container">
-      <h1>Vinay Babu Gundela</h1>
-      <p>ServiceNow Developer | ITSM & IRM Expert | Agile Team Lead</p>
       <nav>
-        <ul>
+        <a href="#home" class="logo">Portfolio</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+        <a href="#" class="download-cv-btn">Download CV</a>
       </nav>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>I'm a certified ServiceNow Developer with over 4 years of experience delivering end-to-end solutions in ITSM, ITOM, and IRM for large enterprise environments. I specialize in translating business needs into technical requirements and building scalable workflows.</p>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="profile-container">
+        <div class="profile-image">
+          <img src="profile.jpg" alt="Vinay Babu Gundela" />
+        </div>
+        <div class="profile-details">
+          <h1>Hello, I'm</h1>
+          <h2>Vinay Babu Gundela</h2>
+          <h3>And I'm a <span>ServiceNow Developer</span></h3>
+          <p>
+            A certified ServiceNow Developer with over 4 years of experience delivering end-to-end solutions in ITSM, ITOM, and IRM for large enterprise environments.
+          </p>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/vinaybabugundela"  target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/vinaybabugundela"  target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:vinaybabugundela1998@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+          <a href="#" class="cta-btn">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats" class="stats-section">
+    <div class="container">
+      <div class="stat-item">
+        <h3>10+</h3>
+        <p>Years of Experience</p>
+      </div>
+      <div class="stat-item">
+        <h3>30+</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-item">
+        <h3>5+</h3>
+        <p>Technologies Mastered</p>
+      </div>
+      <div class="stat-item">
+        <h3>100+</h3>
+        <p>Clients Served</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a certified ServiceNow Developer with over 4 years of experience delivering end-to-end solutions in ITSM, ITOM, and IRM for large enterprise environments. I specialize in translating business needs into technical requirements and building scalable workflows using Flow Designer, Business Rules, Script Includes, and REST APIs. I've led agile project teams—both onshore and offshore—to successfully implement and deploy ServiceNow modules that drive efficiency and compliance.
+      </p>
+      <p>
+        My background includes optimizing platform performance, troubleshooting complex issues, and ensuring development standards across teams. I’ve supported full lifecycle implementations and enjoy working closely with stakeholders through workshops and planning sessions. I hold the ServiceNow CSA certification and am expanding into CIS certifications in ITSM and Risk & Compliance. My goal is to continue delivering impactful ServiceNow solutions that support long-term business strategy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill-card">
+        <i class="fas fa-code"></i>
+        <h3>ServiceNow Development</h3>
+        <p>ITSM, ITOM, IRM, CMDB, Discovery, Event Management, Flow Designer, Business Rules, Client Scripts, Script Includes, UI Policies, ACLs, Service Portal, Custom Applications</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-cogs"></i>
+        <h3>Workflow Automation</h3>
+        <p>Workflow designer, Notifications, Escalations, Approvals, Service Catalog, Incident/Problem/Change Management processes</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-link"></i>
+        <h3>Integration Expertise</h3>
+        <p>REST/SOAP APIs, Integration Hub, MID Server, Data Transformations, Scripted APIs, 3rd-party SaaS integrations (e.g., Okta, Jira, AWS)</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-server"></i>
+        <h3>Cloud & DevOps</h3>
+        <p>AWS (Lambda, EC2, S3), Git, Jenkins, Agile methodologies (Scrum, SAFe), DevSecOps principles</p>
+      </div>
+    </div>
   </section>
 
   <!-- Experience Section -->
-  <section id="experience">
+  <section id="experience" class="experience-section">
     <div class="container">
       <h2>Work Experience</h2>
-      <div class="job">
+      <div class="job-card">
         <h3>Cisco – San Jose, California</h3>
-        <p><strong>ServiceNow Developer</strong> | Sep 2024 – Present</p>
+        <p><strong>ServiceNow Developer</strong> | September 2024 – Present</p>
         <ul>
-          <li>Designed advanced workflows using Flow Designer, Business Rules, Script Includes, Client Scripts</li>
-          <li>Developed REST API integrations for SaaS interoperability</li>
-          <li>Led code reviews, implemented ACLs, and enforced best practices for secure deployments</li>
+          <li>Designed and implemented advanced workflows using Flow Designer, Business Rules, Script Includes, and Client Scripts.</li>
+          <li>Developed robust integrations using REST APIs for seamless SaaS interoperability (ITSM, content, and editing platforms).</li>
+          <li>Performed unit testing and supported code promotions using GitLab pipelines and CI/CD best practices.</li>
+          <li>Created technical documentation, SOPs, and diagrams to ensure maintainability and knowledge transfer.</li>
         </ul>
       </div>
-      <div class="job">
+      <div class="job-card">
         <h3>Value Cyber Pvt. Ltd. – Hyderabad, India</h3>
-        <p><strong>Software Developer</strong> | Mar 2022 – Feb 2023</p>
+        <p><strong>Software Developer</strong> | March 2022 – February 2023</p>
         <ul>
-          <li>Customized ServiceNow modules for ITSM, Case Management, and Reservation workflows</li>
-          <li>Built reusable catalog items and flows that reduced request cycle time by 30%</li>
-          <li>Developed integration interfaces using REST APIs</li>
+          <li>Customized ServiceNow modules for ITSM, Case Management, and Reservation workflows using Client Scripts, UI Policies, and Business Rules.</li>
+          <li>Built reusable catalog items and Flow Designer flows that reduced request cycle time by 30%.</li>
+          <li>Developed integration interfaces using REST APIs, enabling seamless data exchange with third-party tools.</li>
+          <li>Designed dashboards and reports to monitor KPIs and workflow performance.</li>
         </ul>
       </div>
-      <div class="job">
+      <div class="job-card">
         <h3>Value Cyber Tech Pvt. Ltd. – Hyderabad, India</h3>
-        <p><strong>ServiceNow Admin & Developer</strong> | Aug 2019 – Mar 2022</p>
+        <p><strong>ServiceNow Admin & Developer</strong> | August 2019 – March 2022</p>
         <ul>
-          <li>Implemented role-based access control (RBAC), ACLs, and CMDB configurations</li>
-          <li>Built and automated end-to-end IT workflows for Incident, Change, and Request processes</li>
-          <li>Participated in Agile development sprints</li>
+          <li>Designed and implemented role-based access control (RBAC), Access Control Lists (ACLs), and CMDB configurations to ensure accurate asset tracking and secure data governance across the platform.</li>
+          <li>Enabled seamless integration with external systems using secure REST API configurations and Transform Maps, ensuring reliable data synchronization and system interoperability.</li>
+          <li>Built and automated end-to-end IT workflows for Incident, Change, and Request processes, improving operational efficiency and reducing manual intervention.</li>
+          <li>Developed Service Portal interfaces tailored to user roles, enhancing service visibility and improving overall user adoption and satisfaction.</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="container">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>ServiceNow Development: ITSM, ITOM, IRM, CMDB, Discovery</li>
-      <li>Workflow Automation: Flow Designer, Approvals, Escalations</li>
-      <li>Integration: REST/SOAP APIs, MID Server, Transform Maps</li>
-      <li>Cloud & DevOps: AWS, Git, Jenkins, CI/CD pipelines</li>
-      <li>Testing & Deployment: Unit Testing, Code Reviews, Update Sets</li>
-      <li>Compliance & Security: RBAC, CIS Controls, TPRM</li>
-    </ul>
-  </section>
-
   <!-- Certifications Section -->
-  <section id="certifications" class="container">
-    <h2>Certifications</h2>
-    <ul>
-      <li>ServiceNow Certified Application Developer</li>
-      <li>Certified Implementation Specialist – IT Service Management</li>
-      <li>Micro-Certifications: Welcome to ServiceNow, Flow Designer, Platform Analytics</li>
-      <li>Oracle Database SQL Certified Associate</li>
-      <li>Oracle PL/SQL Developer Certified Professional</li>
-    </ul>
+  <section id="certifications" class="certifications-section">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul>
+        <li><strong>ServiceNow Certified Application Developer</strong></li>
+        <li><strong>Certified Implementation Specialist – IT Service Management</strong></li>
+        <li><strong>Micro-Certifications:</strong> Welcome to ServiceNow, Flow Designer, Platform Analytics</li>
+        <li><strong>Oracle Database SQL Certified Associate</strong></li>
+        <li><strong>Oracle PL/SQL Developer Certified Professional</strong></li>
+      </ul>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="container">
-    <h2>Contact Me</h2>
-    <p><strong>Email:</strong> <a href="mailto:vinaybabugundela1998@gmail.com">vinaybabugundela1998@gmail.com</a></p>
-    <p><strong>Phone:</strong> +1-(415)-879-3775</p>
-    <p><strong>Location:</strong> Fremont, California 94536, USA</p>
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Vinay Babu Gundela. All rights reserved.</p>
+      <p>&copy; 2024 Vinay Babu Gundela. All rights reserved.</p>
     </div>
   </footer>
 
